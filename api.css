@@ -13,6 +13,8 @@ body {
 
 [class*="col-"] {
     float: left;
+    padding: 15px;
+    border: 1px solid red;
 }
 
 .col-1 {width: 8.33%;}
@@ -34,18 +36,6 @@ body {
     display: block;
 }
 
-#texth11 {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 36px;
-	text-align:center;
-}
-
-#textp1 {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 19px;
-	text-align: center;
-}
-
 .topnav {
 	list-style-type: none;
 	margin: 0;
@@ -54,7 +44,7 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	position: fixed;
 	top: 0;
-	width:100%;
+	width: 100%;
 }
 
 .topnav ul {
@@ -96,7 +86,7 @@ body {
 @media screen and (max-width: 600px){
     ul.topnav ul.right, 
     ul.topnav li {float: none;}
-}
+}/* CSS Document *//* CSS Document */
 
 .transparent {
 	color: transparent;
