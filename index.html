@@ -3,51 +3,95 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Google | Home</title>
-		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- jQuery UI library -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- Flot library -->
+        
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body>
-		<div class="topnav">
-            <div class="row">
-            	<div class="col-12">
-			    	<ul>
-        				<li><a href="index1.html" class="active">Home</a></li>
-        				<li><a href="products.html">Products</a></li>
-        				<li><a href="api.html">API</a></li>
-        				<li><a href="business.html">Business</a></li>
-        				<li><a href="android.html">Android</a></li>
-        			
-                		<ul>
-          					<li><a href="#contact">About</a></li>
-        				</ul>
-      		       	</ul>
-    			</div>
-            </div>
-  		</div>
-				
+	<body>    
+    	<script src="JavaScript.js"></script>	
+       	<div class="row">
+        	<nav class="col-12 topnav">
+			   	<ul>
+        			<li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="api.html">APIs</a></li>
+        			<li><a href="android.html">Android</a></li>
+                    <li><a href="other_procuts.html">Other Products</a></li>                    
+                    <li><a href="pagerank.html">PageRank</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <ul>
+                    	<li><a href="about_us.html">About us</a></li>
+                    </ul>        		
+      		   	</ul>
+            </nav>
+        </div>
+            			
         <div class="main">
-        	<div class="row">
-  				<div class="col-1">
-    				<p class="transparent">Iets</p>
-  				</div>
-                    	
-            	<div class="col-10">
-    				<h1 id="texth11">Introduction - brief history - the beginnings - home page?</h1>                    
-    				<p id="textp1">Google: a name that rings a bell for most people nowadays. Most of us use it on a regular basis and the others are either too young or too old to understand, need or care for it. It hasn’t always been this way, though. As any company, this now billion dollar company started out small. It was founded by two PhD candidates named Larry Page and Sergey Brin (insert picture or slideshow of them on this page) in 1996. Funfact: these two men were originally going to call their search engine BackRub. Imagine that: “Do you know the name of the actor who plays Deadpool?” “No, but you can just BackRub them”. -cringe-
-      
-      On 14 September 1997 Page and Brin had Google.com registered officially. As you may know, the name google came from the term ‘googol’ which refers to the number 1 followerd by 100 zeros (eventhough we mostly don’t go past page 3 unless in times of true desperation).
-      
-      Google has now brought out several products, however PageRank must have been the most important one. This is the system that, as its name suggests, ranks webpages based on authority of the given website. The higher is appears in your search, the better. PageRank is a very important part of the core algorithm upon which the search engine operated.
-      
-      On this website, you will find out more about products brought to you by Google as well as technologies, API’s etc. that have been introduced or improved by Google. You will also learn more about Google’s dominant position in the business and how they got to where they are now. 
-      				</p>
-  				</div>
-                
-                <div class="col-1">
-                	<p class="transparent">Iets</p>
+        <!-- We decided not to use this after all, it's a nice piece of code (especially the JavaScript), so we decided to let it stay here :) -->
+        	<!-- <div class="row">
+            	<div class="col-12">
+                	<div class="fadein">
+  						<img src="GoogleAPI.jpg" alt="Google API"/>
+                        <img src="GoogleAndroid.jpg" alt="Google Android"/>
+                        <img src="GoogleProducts.png" alt="Other Products"/>
+                        <img src="GooglePageRank.jpg" alt="PageRank"/>
+					</div>
+            	</div>
+            </div> -->
+            
+            <div class="row">
+            	<div class="col-4"></div>
+                <div class="col-4">
+                	<img src="Google.jpg" alt="Google" id="Google"/>
                 </div>
-
+                <div class="col-4"></div>            
+            </div>
+                    
+            <div class="row">
+            	<div class="col-2"></div>
+                <div class="col-4 heading"> 
+                <h3 class="heading">Google</h3>                     
+    				<p>Google: a name that rings a bell for most people nowadays. Most of us use it on a regular basis and the others are either too young or too old to understand, need or care for it. It hasn’t always been this way, though. As any company, this now billion dollar company started out small. It was founded by two PhD candidates named Larry Page and Sergey Brin in 1996.</p>
+					<h3 class="heading">Googol</h3>
+                    <p>On 14 September 1997 Page and Brin had Google.com registered officially. As you may know, the name Google came from the term ‘googol’ which refers to the number 1 followed by 100 zeros (<i>eventhough we mostly don’t go past page 3 unless in times of true desperation</i>).</p>
+                </div>
+                <div class="col-4 heading">
+                	<h3 class="heading">Products</h3>
+					<p>Google has now brought out several products, however PageRank must have been the most important one. This is the system that, as its name suggests, ranks webpages. It does so based on authority of the given website. This means that the higher is appears in your search, the better the contents. PageRank is a very important part of the core algorithm upon which the search engine operates.</p>
+                    <h3 class="heading">What we will cover</h3>
+                    <p>On this website of ours, you will find out more about products brought to you by Google, as well as technologies, API’s etc. that have been introduced or improved by Google. You will also learn more about Google’s dominant position in the business and how they got to where they are now.</p>
+      			</div>
+                <div class="col-2"></div>	
 			</div>
+            
+            <div class="row">
+            	<div class="col-12 button heading">
+            		<button id="funfact1" onclick="showtext()">Fun fact</button>
+                   	<p id="buttonclick">These two men were originally going to call their search engine BackRub. Imagine that: “Do you know the name of the actor who plays Deadpool?” “No, but you can just BackRub them and find out”.</p>                                
+            	</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+        	<div class="row" id="footer">
+            	<div class="col-2"></div>
+                <div class="Text">
+                	<div class="col-4">
+                	
+                	</div>
+                	<div class="col-4">
+                	</div>
+                </div>
+                <div class="col-2"></div>
+            </div>
         </div>
 	</body>
 </html>

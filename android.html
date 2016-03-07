@@ -2,26 +2,89 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="android.css"/>
 		<title>Google | Android</title>
+		<!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- jQuery UI library -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- Flot library -->
+        
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body>
-    	<div class="row">
-  			<div class="topnav">
-			    <ul>
+	<body>    
+    	<script src="JavaScript.js"></script>	
+       	<div class="row">
+            <nav class="topnav col-12">
+			   	<ul>
         			<li><a href="index.html">Home</a></li>
-        			<li><a href="products.html">Products</a></li>
-        			<li><a href="api.html">API</a></li>
-        			<li><a href="business.html">Business</a></li>
-        			<li><a href="android.html" class="active">Android</a></li>
-        			
-                	<ul>
-          				<li><a href="#contact">About</a></li>
-        			</ul>
-      			
-                </ul>
-    		</div>
-  		</div>
+                    <li><a href="api.html">APIs</a></li>
+        			<li class="active"><a href="android.html">Android</a></li>
+                    <li><a href="other_products.html">Other Products</a></li>                    
+                    <li><a href="pagerank.html">PageRank</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <ul>
+                    	<li><a href="about_us.html">About us</a></li>
+                    </ul>        		
+      		   	</ul>
+    		</nav>
+        </div>
+        
+        <div class="row">
+        	<div class="col-4"></div>
+            <div class="col-4">
+            	<img src="GoogleAndroid.jpg" id="Google"/>
+            </div>
+            <div class="col-4"></div>            
+        </div>
+            			
+        <div class="main">                        
+        	<div class="row">
+  				<div class="col-2"></div>                    
+            	<div class="col-8">
+                    <div class="heading">
+                    	<h1>Android</h1>                    
+    					<p>When we talk about the things Google gave us, there is one gigantic thing that can’t be left unspoken. That thing is Android. (What else?) Android is a mobile OS (Operating System) designed for mobile devices working with a touchscreen, such as smartphones and tablets. Nowadays, it also involves smartwatches, TVs and even cars. We’ll tap into some of the devices that operate with Android in this webpage.</p>
+                    
+                      	<button id="funfact2" onclick="showtext()">Fun fact</button>
+                   		<p id="buttonclickAndroid">The Android updates are all named after some sort of pastry or sweet delight. In order from oldest to latest they are called: Cupcake, Donut, Eclair, Froyo (short for Frozen Yoghurt), Gingerbread, Honeycomb, Ice Cream Sandwich, Jelly Bean, KitKat, Lollipop and the latest version goes by the name of Marshmallow.</p>
+                            
+                        <p>Let’s start off with mobile phones and tablets, as most people of our generation will have encountered these somehow. What makes Android so likeable? Well, the latest version features many things such as personalisation, ‘find my device’, automatical back-ups, different security methods and a status bar with all of the information you need on updates and notifications. It is also an open source (free!) Operating System.</p>
+                            
+                        <h3>What's new?</h3>
+                        <p>Personalisation means that you can make your home screen(s) look the way you want them to regarding background, apps and widgets. By simply holding your finger on an empty space of the homescreen, you are able to choose different apps and widgets to place wherever you want them to be. Find my device is a service that provides you with the location of your Android device if you have logged into your device with your Google account, in case of loss (or curiosity). You can even choose the way you want to lock your phone when you’re not using it. Android offers the following options: a drawn pattern, code (numbers), password or even fingerprint (given that your device has a fingerprint scanner).</p>
+                        <p>The new fingerprint authentification API is featured in the Marshmallow update. To use fingerprint authentification in apps, you need to use these APIs in conjunction with the <a href="http://developer.android.com/training/articles/keystore.html">Android Keystore system</a>. You also must use the Android fingerprint image, a compatible device (so one with a fingerprint scanner) and note that each app authentificated fingerprints individually.</p>
+                        <p>Other noteworthy APIs included in the Marshmallow update are (in no particular order) Auto Backup, App Linking, Camera Features, Adoptable Storage Devices, Assist,  Audio Features and 4K Display. Most of these names are quite self-explanatory, others not so much. Camera Features refers to the way that the flashlight now works. Before, you would just tap the button to snap a photo and the flash would only then appear. Now, you can tap the screen to see what the photo will look like with flash (as flash turns on) and then you can snap the shot.</p>
+                            
+                        <h3>Adaptable Storage Devices</h3>
+                        <h4>What is it and how does it work?</h4>
+                        <p>Adoptable Storage Devices means that external storage devices (such as micro-SD card) can behave like internal storage. Wait, what? How does that work? Well, using 128-bit AES encryption and the Ext4 file system, your microSD card can be formatted as a part of the system itself. This leads to the partition being unified with the system and the primary storage location for app data. This simply means that the storage on your external device will be added up to your device’s internal storage. For example, a phone with 8GB with an adoptable storage device which has 64GB will have 72GB of internal storage. However, when a foreign device has been adopted, it has been encrypted to only work with this single Android device.</p>
+                        <p>Apart from the wonderfulness of adoptable storage, there is a minimal downside; Apps can <b>only</b> be placed on adopted storage media if support through the <span class="CodeSnippet">android:installLocation</span> attribute has been indicated by the developer. Because the Marshmallow update is not very old yet, this may not be the case on every app that you want to install. For those that are compatible, they will automatically be installed onto the storage device with the most free space. However, it is in fact possible to change where apps are stored manually in the settings of your Android device.</p>   
+                            
+                        <h4>Security</h4>
+                        <p>   When a device has been adopted, an encryption key will be generated at random. This key will then be stored on the internal storage of the Android device itself (rather than on the new, adopted device). This is an easy way to make sure that the adopted media are just as secure as internal storage. Each adopted device will get their own unique partition GUID, so that they can be linked to their specific keys. aside from that, a 128-bit key size and <span class="CodeSnippet">dm-crypt</span> configured with the <span class="CodeSnippet">aes-cbc-essiv:sha256</span> algorithm are used to encrypt the adopted device.</p>                    	<p>Furthermore, the on-disk layout of the adopted device is very similar to the internal data partition, which includes SELinux labels. If your Android device happens to support multi-user, the adopted storage device will do the same. It will do so with the same level of isolation as internal storage.</p>
+                        <p>Due to the contents of an adopted storage device being tied tightly to the Android device by which it has been adopted, the encryption keys should not be extractable from the original parent device. Therefore, the storage device cannot be mounted elsewhere. Although this may be inconvenient at times, it is safer and that should always be the top priority.</p>
+                            
+                        <h3>Google Keep</h3>
+                        <p>Another new feature is the Keep app. This app offers an efficient way of creating lists (to do, groceries etc) as well as just notes. What makes this app better than your standard Notes app is that you are abe to log in to your Google account so that you are able to access your notes on any of your devices. It also allows for you to set reminders for each individual note. Isn’t that convenient?</p>
+                        <h3>Pull down status bar</h3>
+                        <p>Something that is deemed irreplaceable by Android users is the drop down bar. When you pull down from the top of your screen, whether you are on the home screen or using another app, a bar drops down. This bar shows you notifications of all sorts (updates, downloads, screenshots etc.). In this bar (using the latest version of Android) you will also find a shortcut to your Settings app, a button to clear the notifications and another button which when pressed will present you some handy dandy options. Options such as your sound profile, turning portrait mode on or off, mobile data, extreme saver, airplane mode, fingerprint scanner (if your device has one), location, hotspot and flashlight. You can also adjust the brightness settings of your screen here as well as view the current time and date.</p>
+                    	 
+                        <h6>Sources</h6>
+                        <p style="font-size:small">
+                        	<a href="http://developer.android.com/about/versions/marshmallow/android-6.0.htm">Android</a><br />
+                           	<a href="https://en.wikipedia.org/wiki/Android_version_history#Android_6.0.E2.80.936.0.1_Marshmallow_.28API_level_23.29">Marshmallow features</a><br />
+                           	<a href="http://www.greenbot.com/article/3039136/android/adoptable-storage-in-android-6-0-what-it-is-how-it-works.html">Adaptable storage</a><br />
+                           	<a href="https://source.android.com/devices/storage/adoptable.html">Adapable storage</a>
+                       	</p>
+                   	</div>           
+                </div>  			                
+         		<div class="col-2"></div>
+            </div>
+		</div>
 	</body>
 </html>

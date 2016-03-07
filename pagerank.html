@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Google | PageRank</title>
+		<!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!-- jQuery UI library -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <!-- Flot library -->
+        
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>    
+    	<script src="JavaScript.js"></script>	
+       	<div class="row">
+            <nav class="topnav col-12">
+			   	<ul>
+        			<li><a href="index.html">Home</a></li>
+                    <li><a href="api.html">APIs</a></li>
+        			<li><a href="android.html">Android</a></li>
+                    <li><a href="other_products.html">Other Products</a></li>                    
+                    <li class="active"><a href="pagerank.html">PageRank</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <ul>
+                    	<li><a href="about_us.html">About us</a></li>
+                    </ul>        		
+      		   	</ul>
+    		</nav>
+        </div>
+        
+        <div class="row">
+        	<div class="col-4"></div>
+            <div class="col-4">
+            	<img src="GooglePageRank.jpg" id="Google"/>
+            </div>
+            <div class="col-4"></div>            
+        </div> 
+                    			
+        <div class="main">
+        	<div class="row">
+  				<div class="col-2"></div>                    
+            	<div class="col-8">
+                	<div class="heading">
+                		<h1>PageRank </h1>
+                		<p>As mentioned in the introduction of this website, PageRank is what Google uses to rank pages showing up in the search results. If you have installed the Google toolbar in your browser, you can find PageRank there. The Toolbar PageRank only goes up from zero to ten, but it seems to be a logarithmic scale. However, because pages are added and removed every hour, it is not that simple. PageRank will sometimes even need to guess, for example for newly added pages.</p>
+                        <p>To simply put it: PageRank works by counting votes. A link to a page counts as a vote. This means that if there are no links, there are no votes for that page. The results do not subtract votes in any way. So now that we know that the PageRank of each page depends on how many times it has been ‘voted’ on, don’t we know how it works? Unfortunately, no. Before being able to know whether or not the vote to a page A is valid, we need to know the PageRanks of the page B that linked to page A. Since pages can link to each other and create circles, how are we ever going to be able to calculate the PageRanks?</p>
+                        <p>Because there is absolutely no way of explaining how PageRank works easily and in other words than the website that has helped us understand, we will link you to that website. <a href="http://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm">Here</a> you go, no thanks needed.</p>
+                    </div>
+  				</div>                
+                <div class="col-2"></div>
+			</div>
+        </div>        
+	</body>
+</html>
